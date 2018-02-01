@@ -1,0 +1,29 @@
+
+// FONTS
+
+@font-face {
+	font-family: "League-Spartan";
+	src: url(../fonts/leaguespartan-bold.woff);
+}
+
+$header: 'Saira Extra Condensed', sans-serif;
+$title: 'League-Spartan', $header;
+$body: 'Open Sans', sans-serif;
+
+$black: #141416;
+$white: #F9FAF9;
+$blue: #243048;
+$red: #BA3131;
+$tan: #F4A35B;
+
+@mixin hamburger {
+  background-color: $tan;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  transform: translateY(0);
+  transition: .3s ease-in-out;
+  width: 30px;
+}
