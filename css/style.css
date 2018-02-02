@@ -596,7 +596,6 @@ h3 {
 .imgDiv {
   height: 400px;
   margin-bottom: 4.237em;
-  margin-top: 2.618em;
   width: 400px; }
   .imgDiv::after {
     background: url("../img/tacoIcon.png") no-repeat center;
