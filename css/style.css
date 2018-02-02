@@ -611,7 +611,8 @@ h3 {
     width: 50px; }
 
 .imgMiss {
-  background-image: url("../img/mission.jpg"); }
+  background-image: url("../img/mission.jpg");
+  margin-top: 1.618em; }
 
 .imgTix {
   background-image: url("../img/shed5.jpg"); }
