@@ -201,21 +201,23 @@
 }
 
 .imgDiv {
-  min-height: 740px;
-  width: 60vw;
+  height: 400px;
+  margin-bottom: 4.237em;
+  margin-top: 2.618em;
+  width: 400px;
 
-    @include responsive(small-screen) {
+      &::after {
 
-      display: none;
-    }
+        @include taco;
+      }
 }
 
 .imgMiss {
-  background-image: url("../img/shed5.jpg");
+  background-image: url("../img/mission.jpg");
 }
 
 .imgTix {
-  background-image: url("../img/pizza.jpg");
+  background-image: url("../img/shed5.jpg");
 }
 
 .flowButton {

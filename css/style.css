@@ -594,17 +594,26 @@ h3 {
       width: 100%; } }
 
 .imgDiv {
-  min-height: 740px;
-  width: 60vw; }
-  @media only screen and (max-width: 768px) {
-    .imgDiv {
-      display: none; } }
+  height: 400px;
+  margin-bottom: 4.237em;
+  margin-top: 2.618em;
+  width: 400px; }
+  .imgDiv::after {
+    background: url("../img/tacoIcon.png") no-repeat center;
+    background-size: contain;
+    content: "";
+    display: block;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    top: calc(100% + 12.5px);
+    width: 50px; }
 
 .imgMiss {
-  background-image: url("../img/shed5.jpg"); }
+  background-image: url("../img/mission.jpg"); }
 
 .imgTix {
-  background-image: url("../img/pizza.jpg"); }
+  background-image: url("../img/shed5.jpg"); }
 
 .flowButton {
   margin: 0; }

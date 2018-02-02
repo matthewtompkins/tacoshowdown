@@ -22,3 +22,15 @@ $tan: #F7CD82;
   transition: .3s ease-in-out;
   width: 2px;
 }
+
+@mixin taco {
+  background: url("../img/tacoIcon.png") no-repeat center;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 50px;
+  margin: auto;
+  position: relative;
+  top: calc(100% + 12.5px);
+  width: 50px;
+}
