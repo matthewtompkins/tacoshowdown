@@ -48,9 +48,6 @@ table {
 * {
   box-sizing: border-box; }
 
-@font-face {
-  font-family: "League-Spartan";
-  src: url(../fonts/leaguespartan-bold.woff); }
 /*------------------------
 ----------CONTAINERS------
 ------------------------*/
@@ -241,8 +238,8 @@ table {
 .button {
   background: #F9FAF9;
   border: 2px solid #F9FAF9;
-  color: #141416;
-  font-family: "Saira Extra Condensed", sans-serif;
+  color: #5B584F;
+  font-family: "Rammetto One", sans-serif;
   margin: 1em;
   padding: .25em .618em;
   text-transform: lowercase;
@@ -253,7 +250,7 @@ table {
     @media only screen and (max-width: 768px) {
       .button:hover {
         background: #F9FAF9;
-        color: #141416; } }
+        color: #5B584F; } }
 
 /*------------------------
 ---------IMG/ICON---------
@@ -269,8 +266,9 @@ table {
   background-repeat: no-repeat; }
 
 .icon {
-  height: 20px;
-  width: 20px; }
+  height: 30px;
+  transform: rotate(-90deg);
+  width: 30px; }
 
 .iconSB {
   margin: 4em 1.5em; }
@@ -329,25 +327,25 @@ h3 {
   font-size: .5em; }
 
 .fontHead {
-  font-family: "Saira Extra Condensed", sans-serif; }
+  font-family: "Rammetto One", sans-serif; }
 
 .fontBody {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Abel", sans-serif; }
 
 .fontWhite {
   color: #F9FAF9; }
 
 .fontBlack {
-  color: #141416; }
+  color: #5B584F; }
 
 .fontBlue {
-  color: #243048; }
+  color: #92A78C; }
 
 .fontRed {
-  color: #BA3131; }
+  color: #F79E6B; }
 
 .fontTan {
-  color: #F4A35B; }
+  color: #F7CD82; }
 
 .fontUpper {
   text-transform: uppercase; }
@@ -380,16 +378,16 @@ h3 {
   background-color: #F9FAF9; }
 
 .bgBlack {
-  background-color: #141416; }
+  background-color: #5B584F; }
 
 .bgBlue {
-  background-color: #243048; }
+  background-color: #92A78C; }
 
 .bgRed {
-  background-color: #BA3131; }
+  background-color: #F79E6B; }
 
 .bgTan {
-  background-color: #F4A35B; }
+  background-color: #F7CD82; }
 
 /*------------------------
 ---------OPACITY----------
@@ -439,19 +437,20 @@ h3 {
 /*------------------------
 --------SITE CONTENT------
 ------------------------*/
-@media only screen and (max-width: 768px) {
-  .topNav {
-    display: none; } }
-@media only screen and (max-height: 576px) and (orientation: landscape) {
-  .topNav {
-    display: none; } }
+.topNav {
+  background-color: transparent;
+  height: 100px;
+  position: fixed;
+  transform-origin: right top;
+  transform: rotate(90deg) translateX(100%);
+  width: 100%; }
 
 .logo {
   background-image: url("../img/logo.png");
-  margin-left: 2.618em;
-  margin-top: .618em;
-  height: 10em;
-  width: 10em; }
+  height: 20vw;
+  min-height: 200px;
+  min-width: 200px;
+  width: 20vw; }
 
 @media only screen and (max-width: 768px) {
   .mNav {
@@ -467,64 +466,73 @@ h3 {
 #mMenu {
   flex-direction: column;
   height: 100%;
-  left: 100%; }
+  left: 100%;
+  width: 100%; }
 
 .mOption {
-  border-bottom: 1px solid grey;
   font-size: 1.618em;
+  line-height: 1.618em;
   margin-right: 0; }
+  .mOption:hover {
+    color: #92A78C; }
 
 .mSoc {
-  background: #141416;
   min-width: 200px; }
+  .mSoc li {
+    transform: rotate(0); }
 
 #menuClose {
   cursor: pointer; }
 
 #hamburger {
   cursor: pointer;
-  float: right;
-  height: 40px;
+  height: 30px;
+  margin-left: 40px;
+  margin-right: 50px;
+  margin-top: 35px;
   position: relative;
   width: 30px; }
   #hamburger::before {
-    background-color: #F4A35B;
+    background-color: #F9FAF9;
     content: "";
     display: block;
-    height: 2px;
+    height: 30px;
     position: absolute;
     right: 0;
     transform: translateY(0);
     transition: .3s ease-in-out;
-    width: 30px;
-    top: 10px; }
+    width: 2px;
+    right: 10px; }
   #hamburger::after {
-    background-color: #F4A35B;
+    background-color: #F9FAF9;
     content: "";
     display: block;
-    height: 2px;
+    height: 30px;
     position: absolute;
     right: 0;
     transform: translateY(0);
     transition: .3s ease-in-out;
-    width: 30px;
-    bottom: 10px; }
+    width: 2px;
+    left: 10px; }
+  #hamburger:hover::before {
+    right: 5px; }
+  #hamburger:hover::after {
+    left: 5px; }
 
 .linkRed:hover {
-  color: #BA3131 !important; }
+  color: #92A78C !important; }
 
 .linkBlack:hover {
-  color: #141416; }
+  color: #5B584F; }
 
 .navOption {
-  margin-right: 2.618em; }
-  @media only screen and (max-width: 768px) {
-    .navOption {
-      margin-bottom: 1em;
-      margin-right: 0; } }
+  margin-right: 60px; }
+
+.tix {
+  transform: translateY(-10px); }
 
 .hero {
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/heroBW.png");
   flex-direction: column;
   min-height: 100vh; }
   @media only screen and (max-width: 768px) {
@@ -539,24 +547,26 @@ h3 {
       justify-content: center; } }
 
 .titleDiv {
-  bottom: 5vw;
   width: 100%; }
   @media only screen and (max-width: 768px) {
     .titleDiv {
-      margin-top: 10em;
       position: relative; } }
   @media only screen and (max-height: 576px) and (orientation: landscape) {
     .titleDiv {
-      margin-top: 10em;
       position: relative; } }
 
 .titleText {
-  font-family: "League-Spartan", "Saira Extra Condensed", sans-serif;
-  font-size: 8.8vw;
-  line-height: 4vw; }
+  font-family: "Rammetto One", sans-serif;
+  font-size: 4.236em;
+  line-height: 1em; }
   @media only screen and (max-width: 768px) {
     .titleText {
       line-height: 1; } }
+
+.bgTile {
+  float: left;
+  height: 100%;
+  width: 50%; }
 
 .infoDiv {
   background-color: rgba(10, 10, 10, 0.4); }
@@ -612,72 +622,12 @@ h3 {
       height: 15vw;
       width: 15vw; } }
 
-#sicily {
-  background-image: url("../img/sicilys.jpg"); }
-
-#mcbw {
-  background-image: url("../img/mcbw.jpg"); }
-
-#belle {
-  background-image: url("../img/belleIsle.png"); }
-
-#brass {
-  background-image: url("../img/brassRail.png"); }
-
-#dsp {
-  background-image: url("../img/dsp.png"); }
-
-#gior {
-  background-image: url("../img/gior.jpeg"); }
-
-#atwater {
-  background-image: url("../img/atwater.jpg"); }
-
-#jets {
-  background-image: url("../img/jets.png"); }
-
-#mikes {
-  background-image: url("../img/mikes.png"); }
-
-#offworld {
-  background-image: url("../img/offworld.png"); }
-
-#tonys {
-  background-image: url("../img/tonys.jpeg"); }
-
-#ink {
-  background-image: url("../img/ink.jpg"); }
-
-#first {
-  background-image: url("../img/first.png"); }
-
-#altos {
-  background-image: url("../img/altos.jpg"); }
-
-#malibu {
-  background-image: url("../img/malibu.jpg"); }
-
-#jameson {
-  background-image: url("../img/jameson.png"); }
-
-#absolut {
-  background-image: url("../img/absolut.png"); }
-
-#embc {
-  background-image: url("../img/embc.png"); }
-
-#three {
-  background-image: url("../img/365.png"); }
-
-#faygo {
-  background-image: url("../img/faygo.png"); }
-
 @media only screen and (max-width: 768px) {
   #volunteer {
     padding: 0; } }
 
 .formDiv {
-  background-color: #141416;
+  background-color: #5B584F;
   min-width: 400px;
   max-width: 100%; }
   @media only screen and (max-width: 768px) {
@@ -708,7 +658,7 @@ label {
 input[type="submit"] {
   appearance: none;
   cursor: pointer;
-  font-size: 1.618em;
+  font-size: 1em;
   margin: 1em;
   -moz-appearance: none;
   outline: none;

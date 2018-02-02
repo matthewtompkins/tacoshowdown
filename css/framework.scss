@@ -282,8 +282,9 @@
 }
 
 .icon {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  transform: rotate(-90deg);
+  width: 30px;
 }
 
 .iconSB {
@@ -377,11 +378,11 @@ h3 {
 }
 
 .fontBlue {
-  color: $blue;
+  color: $green;
 }
 
 .fontRed {
-  color: $red;
+  color: $orange;
 }
 
 .fontTan {
@@ -433,11 +434,11 @@ h3 {
 }
 
 .bgBlue {
-  background-color: $blue;
+  background-color: $green;
 }
 
 .bgRed {
-  background-color: $red;
+  background-color: $orange;
 }
 
 .bgTan {

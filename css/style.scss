@@ -9,24 +9,20 @@
 ------------------------*/
 
 .topNav {
-  //background-color: rgba(249,250,249,.9);
-  //box-shadow: 2px 2px 2px rgba(10,10,10,.2);
-
-    @include responsive(small-screen) {
-      display: none;
-    }
-
-    @include landscape {
-      display: none;
-    }
+  background-color: transparent;
+  height: 100px;
+  position: fixed;
+  transform-origin: right top;
+  transform: rotate(90deg) translateX(100%);
+  width: 100%;
 }
 
 .logo {
   background-image: url("../img/logo.png");
-  margin-left: 2.618em;
-  margin-top: .618em;
-  height: 10em;
-  width: 10em;
+  height: 20vw;
+  min-height: 200px;
+  min-width: 200px;
+  width: 20vw;
 }
 
 .mNav {
@@ -49,17 +45,25 @@
   flex-direction: column;
   height: 100%;
   left: 100%;
+  width: 100%;
 }
 
 .mOption {
-  border-bottom: 1px solid grey;
   font-size: 1.618em;
+  line-height: 1.618em;
   margin-right: 0;
+
+    &:hover {
+      color: $green;
+    }
 }
 
 .mSoc {
-  background: $black;
   min-width: 200px;
+
+    li {
+      transform: rotate(0);
+    }
 }
 
 #menuClose {
@@ -69,26 +73,36 @@
 #hamburger {
 
   cursor: pointer;
-  float: right;
-  height: 40px;
+  height: 30px;
+  margin-left: 40px;
+  margin-right: 50px;
+  margin-top: 35px;
   position: relative;
   width: 30px;
 
     &::before {
       @include hamburger;
-      top: 10px;
+      right: 10px;
     }
 
     &::after {
       @include hamburger;
-      bottom: 10px;
+      left: 10px;
+    }
+
+    &:hover::before {
+      right: 5px;
+    }
+
+    &:hover::after {
+      left: 5px;
     }
 }
 
 .linkRed {
 
   &:hover {
-    color: $red!important;
+    color: $green!important;
   }
 }
 
@@ -100,16 +114,15 @@
 }
 
 .navOption {
-  margin-right: 2.618em;
+  margin-right: 60px;
+}
 
-    @include responsive(small-screen) {
-      margin-bottom: 1em;
-      margin-right: 0;
-    }
+.tix {
+  transform: translateY(-10px);
 }
 
 .hero {
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/heroBW.png");
   flex-direction: column;
   min-height: 100vh;
 
@@ -127,28 +140,31 @@
 }
 
 .titleDiv {
-  bottom: 5vw;
   width: 100%;
 
     @include responsive(small-screen) {
-      margin-top: 10em;
       position: relative;
     }
 
     @include landscape {
-      margin-top: 10em;
       position: relative;
     }
 }
 
 .titleText {
-  font-family: $title;
-  font-size: 8.8vw;
-  line-height: 4vw;
+  font-family: $header;
+  font-size: 4.236em;
+  line-height: 1em;
 
     @include responsive(small-screen) {
       line-height: 1;
     }
+}
+
+.bgTile {
+  float: left;
+  height: 100%;
+  width: 50%;
 }
 
 .infoDiv {
@@ -222,86 +238,6 @@
     }
 }
 
-#sicily {
-  background-image: url("../img/sicilys.jpg");
-}
-
-#mcbw {
-  background-image: url("../img/mcbw.jpg");
-}
-
-#belle {
-  background-image: url("../img/belleIsle.png");
-}
-
-#brass {
-  background-image: url("../img/brassRail.png");
-}
-
-#dsp {
-  background-image: url("../img/dsp.png");
-}
-
-#gior {
-  background-image: url("../img/gior.jpeg");
-}
-
-#atwater {
-  background-image: url("../img/atwater.jpg");
-}
-
-#jets {
-  background-image: url("../img/jets.png");
-}
-
-#mikes {
-  background-image: url("../img/mikes.png");
-}
-
-#offworld {
-  background-image: url("../img/offworld.png");
-}
-
-#tonys {
-  background-image: url("../img/tonys.jpeg");
-}
-
-#ink {
-  background-image: url("../img/ink.jpg");
-}
-
-#first {
-  background-image: url("../img/first.png");
-}
-
-#altos {
-  background-image: url("../img/altos.jpg");
-}
-
-#malibu {
-  background-image: url("../img/malibu.jpg");
-}
-
-#jameson {
-  background-image: url("../img/jameson.png");
-}
-
-#absolut {
-  background-image: url("../img/absolut.png")
-}
-
-#embc {
-  background-image: url("../img/embc.png");
-}
-
-#three {
-  background-image: url("../img/365.png");
-}
-
-#faygo {
-  background-image: url("../img/faygo.png");
-}
-
 #volunteer {
 
     @include responsive(small-screen) {
@@ -348,7 +284,7 @@ label {
 input[type="submit"] {
   appearance: none;
   cursor: pointer;
-  font-size: 1.618em;
+  font-size: 1em;
   margin: 1em;
   -moz-appearance: none;
   outline: none;

@@ -13,29 +13,28 @@
   <meta property="og:url" content="http://www.thetacoshowdown.com">
   <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Saira+Extra+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rammetto+One|Abel" rel="stylesheet">
 </head>
 <body>
-  <header class="fullWidth topNav pad2 pFix top left z5 transition3" id="nav">
-    <div class="logo pAbs top left contain nrc"></div>
-    <ul class="fontHead fontWhite floatRight fontLower">
-      <li class="navOption dInBlock"><a class="navA linkRed transition3" href="#info">Event Info</a></li>
-      <li class="navOption dInBlock"><a class="navA linkRed transition3" href="#sponsors">Sponsors</a></li>
-      <li class="navOption dInBlock"><a class="navA linkRed transition3" href="#tickets">Buy Tickets</a></li>
-      <li class="navOption dInBlock"><a class="navA linkRed transition3" href="#volunteer">Contact</a></li>
+  <header class="fullWidth topNav pFix top left z5 transition3" id="nav">
+    <div id="hamburger" class="dInBlock"></div>
+    <ul class="fontBody fontWhite fontLower dInBlock navUL">
+      <li class="navOption dInBlock icon fb contain nrc op0"><a href="#" class="inLink dBlock"></a></li>
+      <li class="navOption dInBlock icon ig contain nrc op0"s><a href="#" class="inLink dBlock"></a></li>
+      <li class="navOption dInBlock tix op0"><a href="#">Buy Tickets</a></li>
     </ul>
   </header>
-  <header class="mNav fullWidth pad2 pFix top left z5 dNone">
+  <!--<header class="mNav fullWidth pad2 pFix top left z5 dNone">
     <div class="logo mLogo pAbs top left contain nrc transition6" id="mLogo"></div>
     <div id="hamburger"></div>
-  </header>
-  <div class="fullWidth pad2 pFix top z5 dNone transition6 flexCenter bgWhite" id="mMenu">
-    <h3 id="menuClose" class="fontBody fontBlack pAbs top right pad2">x</h3>
-    <ul class="mOptions fontHead fontBlack fontlower alignCenter">
-      <li class="navOption"><a class="mOption" href="#info">Event Info</a></li>
-      <li class="navOption"><a class="mOption" href="#sponsors">Sponsors</a></li>
-      <li class="navOption"><a class="mOption" href="#tickets">Buy Tickets</a></li>
-      <li class="navOption"><a class="mOption" href="#volunteer">Contact</a></li>
+  </header>-->
+  <div class="pad2 pFix top z5 dNone transition6 flexCenter bgWhite" id="mMenu">
+    <h3 id="menuClose" class="fontHead fontBlack pAbs top right marg2">x</h3>
+    <ul class="mOptions fontHead fontBlack fontlower alignCenter font5">
+      <li><a class="mOption" href="#info">Event Info</a></li>
+      <li><a class="mOption" href="#sponsors">Sponsors</a></li>
+      <li><a class="mOption" href="#tickets">Buy Tickets</a></li>
+      <li><a class="mOption" href="#volunteer">Contact</a></li>
     </ul>
     <ul class="socNav dFlex marg1 pad1 mSoc">
       <li class="icon dInBlock fb contain nrc"><a href="https://www.facebook.com/events/395079877615766/" class="inLink dBlock"></a></li>
@@ -43,23 +42,18 @@
       <li class="icon dInBlock ig contain nrc"><a href="https://www.instagram.com/thepizzathrowdown/" class="inLink dBlock"></a></li>
     </ul>
   </div>
-  <section class="hero pRel z2 fullWidth bgWhite alignCenter nrc cover">
-    <div class="titleDiv pAbs" id="titleDiv">
-      <h1 class="titleText fontUpper fontWhite">Taco Showdown</h1>
-      <div class="dInBlock infoDiv pad2 transition3 alignCenter">
-        <ul class="socNav dFlex marg1">
-          <li class="icon dInBlock fb contain nrc"><a href="https://www.facebook.com/events/395079877615766/" class="inLink dBlock"></a></li>
-          <!--<li class="icon dInBlock tw contain nrc"><a href="#" class="inLink dBlock"></a></li>-->
-          <li class="icon dInBlock ig contain nrc"><a href="https://www.instagram.com/thepizzathrowdown/" class="inLink dBlock"></a></li>
-        </ul>
-        <h3 class="fontHead fontWhite">#tacoshowdown2018</h3>
-        <p class="fontHead fontWhite op5">Sunday July 29, 2018</p>
-        <p class="fontHead fontWhite textBreak op5">1p-4p</p>
-        <a href="https://www.eventbrite.com/e/the-pizza-throwdown-tickets-40947511108?aff=erelexpmlt" class="button">Buy Tickets</a>
-      </div>
-    </div>
+  <section class="hero pRel z2 fullWidth bgWhite alignCenter nrc cover dFlex flexCenter"></section>
+  <section class="pAbs top left fullWidth fullHeight z3 op4">
+    <div class="bgTile bgRed"></div>
+    <div class="bgTile bgBlue"></div>
   </section>
-  <div class="sidebar pFix bottom right pad2 transition3 alignCenter">
+  <section class="z4 alignCenter fullWidth fullHeight dFlex flexCenter pAbs top left">
+    <!--<div class="titleDiv" id="titleDiv">
+      <h1 class="titleText fontHead fontUpper fontWhite">Taco Showdown</h1>
+    </div> -->
+    <div class="logo contain nrc"></div>
+  </section>
+  <!-- <div class="sidebar pFix bottom right pad2 transition3 alignCenter">
     <ul class="socNav dFlex marg1">
       <li class="icon dInBlock fb contain nrc"><a href="https://www.facebook.com/events/395079877615766/" class="inLink dBlock"></a></li>
       <li class="icon dInBlock ig contain nrc"><a href="https://www.instagram.com/thepizzathrowdown/" class="inLink dBlock"></a></li>
@@ -68,11 +62,11 @@
     <p class="fontHead fontWhite alignLeft op5">Sunday July 29, 2018</p>
     <p class="fontHead fontWhite textBreak alignLeft op5">1p-4p</p>
     <a href="https://www.eventbrite.com/e/the-pizza-throwdown-tickets-40947511108?aff=erelexpmlt" class="button">Buy Tickets</a>
-  </div>
-  <section class="fullWidth bgRed dFlex flexCenter" id="info">
-    <div class="contTxt fontWhite alignRight pad2">
-      <h3 class="fontHead fontLower textBreak">What, you might ask, is a Pizza Throwdown?</h3>
-      <p class="floatFont floatRight fontBody op5">A pizza throwdown is a gathering of all that is pizza under one roof.  During this year’s Pizza Throwdown, join over 1,000 other pizza lovers for the opportunity to sample and taste pizza from 20+ of the best pizza makers in Michigan.  Each ticket entitles you to 5 complimentary samples from your choice of pizza makers.  Each pizza maker will also be selling additional slices (price to be determined by the vendor) and offering all of their best pizza creations for your enjoyment.  There will also be a full bar, beer, and non-alcoholic sodas and bottle water for purchase.  Entertainment will be provided by DJ Tom T.  Don’t forget to also take a look at the 10+ merchants offerings while enjoying your favorite slice.</p>
+  </div> -->
+  <section class="fullWidth bgBlue dFlex flexCenter pad2" id="info">
+    <div class="contTxt fontWhite alignRight">
+      <h3 class="fontHead fontLower textBreak">What, you might ask, is a Taco Showdown?</h3>
+      <p class="floatFont floatRight fontBody op7">The Taco Showdown is a gathering of all things Tacos under one roof. During this year’s Taco Showdown, join over 1,000 other Taco lovers for the opportunity to sample and taste Tacos (And Salsa) from 20+ of the best taquerias in Michigan. Each ticket entitles you to a complimentary taco from your choice of taquerias.  Each restaurant/chef will also be selling additional tacos (price to be determined by the vendor) and offering all of their creations for your enjoyment. There will also be a full bar, beer, and non-alcoholic sodas and bottle water available for purchase. Entertainment will be provided by one of Detroit’s Top DJs.  Don’t forget to also take a look at the 10+ merchants offerings while enjoying your favorite taco along with some great interactive games to enjoy! The Taco Showdown is a gathering of all things Tacos under one roof. During this year’s Taco Showdown, join over 1,000 other Taco lovers for the opportunity to sample and taste Tacos (And Salsa) from 20+ of the best taquerias in Michigan. Each ticket entitles you to a complimentary taco from your choice of taquerias.  Each restaurant/chef will also be selling additional tacos (price to be determined by the vendor) and offering all of their creations for your enjoyment. There will also be a full bar, beer, and non-alcoholic sodas and bottle water available for purchase. Entertainment will be provided by one of Detroit’s Top DJs.  Don’t forget to also take a look at the 10+ merchants offerings while enjoying your favorite taco along with some great interactive games to enjoy! </p>
       <a class="fontHead fontLower" href="./index.html#tickets">More info</a>
     </div>
     <div class="imgMiss imgDiv nrc cover"></div>
@@ -88,7 +82,7 @@
     <div class="sponsorDiv fullWidth dFlex flexCenter">
     </div>
   </section>
-  <section class="tickets fullWidth bgBlue dFlex flexCenter" id="tickets">
+  <section class="tickets fullWidth bgRed dFlex flexCenter" id="tickets">
     <div class="contTxt fontBody fontWhite alignRight pad2">
       <h4 class="fontHead fontLower">Date and Time</h4>
       <p class="fontBody font5 op5">Sun, February 11, 2018</p>
@@ -110,25 +104,25 @@
   </section>
   <section class="fullWidth bgWhite dFlex flexCenter alignCenter pad4" id="volunteer">
     <div class="formDiv">
-      <h3 class="fontLower fontHead fontWhite pad2">want to be involved?</h3>
+      <h4 class="fontLower fontHead fontWhite pad2">want to be involved?</h4>
       <form action="https://formspree.io/andrusm@me.com" class="alignLeft" method="POST">
-        <label class="fontHead fontLower op5 fontWhite">I am a...</label>
-        <label class="fontHead fontLower fontWhite" for="rVol">Volunteer</label>
+        <label class="fontBody fontLower op5 fontWhite">I am a...</label>
+        <label class="fontBody fontLower fontWhite" for="rVol">Volunteer</label>
         <input type="radio" value="volunteer" name="interest" id="rVol" checked>
-        <label class="fontHead fontLower fontWhite" for="rMerc">Vendor</label>
+        <label class="fontBody fontLower fontWhite" for="rMerc">Vendor</label>
         <input type="radio" value="merchant" name="interest" id="rMerc">
-        <label class="fontHead fontLower fontWhite" for="rRest">Restaurant</label>
+        <label class="fontBody fontLower fontWhite" for="rRest">Restaurant</label>
         <input type="radio" value="restaurant" name="interest" id="rRest">
         <div>
-          <label class="fontHead fontLower op5 fontWhite">Or...</label>
-          <label class="fontHead fontLower fontWhite" for="rGen">I have a general question</label>
+          <label class="fontBody fontLower op5 fontWhite">Or...</label>
+          <label class="fontBody fontLower fontWhite" for="rGen">I have a general question</label>
           <input type="radio" value="general" name="interest" id="rGen">
         </div>
-        <label class="fontHead fontLower op5 fontWhite dBlock">Name</label>
+        <label class="fontBody fontLower op5 fontWhite dBlock">Name</label>
         <input class="volInput" name="Name">
-        <label class="fontHead fontLower op5 fontWhite">E-mail</label>
+        <label class="fontBody fontLower op5 fontWhite">E-mail</label>
         <input class="volInput" name="Email">
-        <label class="fontHead fontLower op5 fontWhite">Message (optional)</label>
+        <label class="fontBody fontLower op5 fontWhite">Message (optional)</label>
         <textarea class="volInput volArea" name="Message"></textarea>
         <div class="fullWidth alignCenter">
           <input type="submit" class="button" value="Send">
@@ -139,6 +133,7 @@
   <footer class="pad2 alignCenter bgWhite">
     <p class="fontBody font6 fontBlack">Copyright (c) 2018 Pizza Throwdown All Rights Reserved.</p>
     <p class="fontBody font6 fontBlack">Website design by <a class="fontRed" href="http://mtdesign.io">Matt Tompkins</a></p>
+    <p class="fontBody font6 fontBlack">Icons by Saloni Sinha</p>
   </footer>
   <script>
 
@@ -151,31 +146,30 @@
       var mobile = 760;
 
       var nav = document.getElementById("nav");
-      var navLi = document.getElementsByClassName("navA");
+      var navOption = document.getElementsByClassName("navOption");
       var mLogo = document.getElementById("mLogo");
 
       if ( winTop > ( winHeight / 10 )  ) {
 
           if ( winWidth <= mobile ) {
 
-            mLogo.style.opacity = "0";
+            //mLogo.style.opacity = "0";
           }
 
-        nav.style.backgroundColor = "rgba(249,250,249,.7)";
+        nav.style.backgroundColor = "#F7CD82";
 
-        for ( i = 0; i < navLi.length; i++ ) {
+        for ( i = 0; i < navOption.length; i++ ) {
 
-          navLi[i].style.color = "#141416";
+          navOption[i].style.opacity = "1";
         }
-      } else {
 
-        mLogo.style.opacity = "1";
+      } else {
 
         nav.style.backgroundColor = "transparent";
 
-        for ( i = 0; i < navLi.length; i++ ) {
+        for ( i = 0; i < navOption.length; i++ ) {
 
-          navLi[i].style.color = "#F9FAF9";
+          navOption[i].style.opacity = "0";
         }
       }
 

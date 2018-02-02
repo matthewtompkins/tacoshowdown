@@ -1,29 +1,24 @@
 
 // FONTS
 
-@font-face {
-	font-family: "League-Spartan";
-	src: url(../fonts/leaguespartan-bold.woff);
-}
+$header: 'Rammetto One', sans-serif;
+$title: 'Rametto One', sans-serif;
+$body: 'Abel', sans-serif;
 
-$header: 'Saira Extra Condensed', sans-serif;
-$title: 'League-Spartan', $header;
-$body: 'Open Sans', sans-serif;
-
-$black: #141416;
+$black: #5B584F;
 $white: #F9FAF9;
-$blue: #243048;
-$red: #BA3131;
-$tan: #F4A35B;
+$green: #92A78C;
+$orange: #F79E6B;
+$tan: #F7CD82;
 
 @mixin hamburger {
-  background-color: $tan;
+  background-color: $white;
   content: "";
   display: block;
-  height: 2px;
+  height: 30px;
   position: absolute;
   right: 0;
   transform: translateY(0);
   transition: .3s ease-in-out;
-  width: 30px;
+  width: 2px;
 }
