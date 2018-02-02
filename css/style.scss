@@ -189,7 +189,9 @@
 }
 
 .contTxt {
+  border: 2px solid $white;
   max-width: 500px;
+  padding: 2em;
   width: 40vw;
 
     @include responsive(small-screen) {

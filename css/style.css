@@ -585,7 +585,9 @@ h3 {
   justify-content: space-around; }
 
 .contTxt {
+  border: 2px solid #F9FAF9;
   max-width: 500px;
+  padding: 2em;
   width: 40vw; }
   @media only screen and (max-width: 768px) {
     .contTxt {
