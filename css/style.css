@@ -532,7 +532,7 @@ h3 {
   transform: translateY(-10px); }
 
 .hero {
-  background-image: url("../img/heroBW.png");
+  background-image: url("../img/hero2wide.png");
   flex-direction: column;
   min-height: 100vh; }
   @media only screen and (max-width: 768px) {
@@ -595,24 +595,24 @@ h3 {
       text-align: center;
       width: 100%; } }
 
+.headline::after {
+  background: url("../img/tacoIcon.png") no-repeat center;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 50px;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  width: 50px; }
+
 .imgDiv {
+  background-attachment: fixed;
   height: 400px;
-  margin-bottom: 4.237em;
-  width: 400px; }
-  .imgDiv::after {
-    background: url("../img/tacoIcon.png") no-repeat center;
-    background-size: contain;
-    content: "";
-    display: block;
-    height: 50px;
-    margin: auto;
-    position: relative;
-    top: calc(100% + 12.5px);
-    width: 50px; }
+  width: 100vw; }
 
 .imgMiss {
-  background-image: url("../img/mission.jpg");
-  margin-top: 1.618em; }
+  background-image: url("../img/mission.jpg"); }
 
 .imgTix {
   background-image: url("../img/shed5.jpg"); }

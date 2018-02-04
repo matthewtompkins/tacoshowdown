@@ -122,7 +122,7 @@
 }
 
 .hero {
-  background-image: url("../img/heroBW.png");
+  background-image: url("../img/hero2wide.png");
   flex-direction: column;
   min-height: 100vh;
 
@@ -202,20 +202,22 @@
     };
 }
 
+.headline {
+
+    &::after {
+
+      @include taco;
+    }
+}
+
 .imgDiv {
+  background-attachment: fixed;
   height: 400px;
-  margin-bottom: 4.237em;
-  width: 400px;
-
-      &::after {
-
-        @include taco;
-      }
+  width: 100vw;
 }
 
 .imgMiss {
   background-image: url("../img/mission.jpg");
-  margin-top: 1.618em;
 }
 
 .imgTix {
