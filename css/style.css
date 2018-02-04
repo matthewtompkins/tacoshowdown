@@ -532,6 +532,7 @@ h3 {
   transform: translateY(-10px); }
 
 .hero {
+  background-attachment: fixed;
   background-image: url("../img/hero2wide.png");
   flex-direction: column;
   min-height: 100vh; }
