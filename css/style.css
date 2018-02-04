@@ -642,7 +642,7 @@ h3 {
 .formDiv {
   background-color: #5B584F;
   min-width: 400px;
-  max-width: 100%; }
+  max-width: 400px; }
   @media only screen and (max-width: 768px) {
     .formDiv {
       min-width: 100%;

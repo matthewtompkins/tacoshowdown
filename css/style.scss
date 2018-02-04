@@ -261,7 +261,7 @@
 .formDiv {
   background-color: $black;
   min-width: 400px;
-  max-width: 100%;
+  max-width: 400px;
 
     @include responsive(small-screen) {
       min-width: 100%;
