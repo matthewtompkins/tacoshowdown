@@ -444,6 +444,8 @@ h3 {
   transform-origin: right top;
   transform: rotate(90deg) translateX(100%);
   width: 100%; }
+  .topNav a:hover {
+    color: #92A78C; }
 
 .logo {
   background-image: url("../img/logo.png");
@@ -538,14 +540,10 @@ h3 {
   min-height: 100vh; }
   @media only screen and (max-width: 768px) {
     .hero {
-      align-items: center;
-      display: flex;
-      justify-content: center; } }
+      background-attachment: scroll; } }
   @media only screen and (max-height: 576px) and (orientation: landscape) {
     .hero {
-      align-items: center;
-      display: flex;
-      justify-content: center; } }
+      background-attachment: scroll; } }
 
 .titleDiv {
   width: 100%; }
@@ -611,6 +609,9 @@ h3 {
   background-attachment: fixed;
   height: 400px;
   width: 100vw; }
+  @media only screen and (max-width: 768px) {
+    .imgDiv {
+      background-attachment: scroll; } }
 
 .imgMiss {
   background-image: url("../img/mission.jpg"); }

@@ -69,21 +69,21 @@
     <div class="contTxt fontBody fontWhite pad2 auto">
       <h3 class="headline fontHead fontLower textBreak">The details...</h3>
       <h4 class="fontHead fontLower">Date and Time</h4>
-      <p class="fontBody op5">Sun, July 29th, 2018</p>
-      <p class="fontBody op5">1:00pm-4:00pm EST</p>
+      <p class="fontBody op7 fontBlack">Sun, July 29th, 2018</p>
+      <p class="fontBody op7 fontBlack">1:00pm-4:00pm EST</p>
       <h4 class="fontHead fontLower">Location</h4>
-      <p class="fontBody op5">Shed #5</p>
-      <p class="fontBody op5">2801 Russell St. Detroit, MI 48207</p>
+      <p class="fontBody op7 fontBlack">Shed #5</p>
+      <p class="fontBody op7 fontBlack">2801 Russell St. Detroit, MI 48207</p>
       <h4 class="fontHead fontLower">Tickets</h4>
-      <p class="fontBody op5">Pre-Sale Discounted Tickets start at $15 (Includes 15 tacquerias) with additional tacos able for purchase with prices set by the vendor. Limited Quanties at $15 and once they sell out the pirce will increase to $20. No refunds.</p>
+      <p class="fontBody op7 fontBlack">Pre-Sale Discounted Tickets start at $15 (Includes 15 tacquerias) with additional tacos able for purchase with prices set by the vendor. Limited Quanties at $15 and once they sell out the pirce will increase to $20. No refunds.</p>
       <h4 class="fontHead fontLower">Parking</h4>
-      <p class="fontBody op5">Free on-site parking at and and round Shed 5.</p>
+      <p class="fontBody op7 fontBlack">Free on-site parking at and and round Shed 5.</p>
       <h4 class="fontHead fontLower">Bar</h4>
-      <p class="fontBody op5">Drinks from our Full Bar will be available for purchase as well as some great vendors.</p>
+      <p class="fontBody op7 fontBlack">Drinks from our Full Bar will be available for purchase as well as some great vendors.</p>
       <h4 class="fontHead fontLower">Music By:</h4>
-      <p class="fontBody op5">DJ Tom T</p>
+      <p class="fontBody op7 fontBlack">DJ Tom T</p>
       <h4 class="fontHead fontLower">Hosted By:</h4>
-      <p class="fontBody op5 textBreak">Dine Drink Detroit</p>
+      <p class="fontBody op7 textBreak fontBlack">Dine Drink Detroit</p>
       <a href="https://www.eventbrite.com/e/taco-showdown-detroit-2018-tickets-42507834076" class="button flowButton">Buy Tickets</a>
     </div>
   </section>
@@ -134,29 +134,31 @@
       var navOption = document.getElementsByClassName("navOption");
       var mLogo = document.getElementById("mLogo");
 
-      if ( winTop > ( winHeight / 10 )  ) {
+      if ( winWidth <= mobile ) {
 
-          if ( winWidth <= mobile ) {
-
-            //mLogo.style.opacity = "0";
-          }
-
-        nav.style.backgroundColor = "#F7CD82";
-
-        for ( i = 0; i < navOption.length; i++ ) {
-
-          navOption[i].style.opacity = "1";
-        }
-
+        //mLogo.style.opacity = "0";
       } else {
 
-        nav.style.backgroundColor = "transparent";
+        if ( winTop > ( winHeight / 10 )  ) {
 
-        for ( i = 0; i < navOption.length; i++ ) {
+          nav.style.backgroundColor = "#F7CD82";
 
-          navOption[i].style.opacity = "0";
+          for ( i = 0; i < navOption.length; i++ ) {
+
+            navOption[i].style.opacity = "1";
+          }
+
+        } else {
+
+          nav.style.backgroundColor = "transparent";
+
+          for ( i = 0; i < navOption.length; i++ ) {
+
+            navOption[i].style.opacity = "0";
+          }
         }
       }
+
 
     });
 
