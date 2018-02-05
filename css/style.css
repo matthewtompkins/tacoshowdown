@@ -595,15 +595,15 @@ h3 {
       width: 100%; } }
 
 .headline::after {
-  background: url("../img/tacoIcon.png") no-repeat center;
+  background: url("../img/logo.png") no-repeat center;
   background-size: contain;
   content: "";
   display: block;
-  height: 50px;
+  height: 80px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 40px;
   position: relative;
-  width: 50px; }
+  width: 80px; }
 
 .imgDiv {
   background-attachment: fixed;
@@ -617,7 +617,8 @@ h3 {
   background-image: url("../img/mission.jpg"); }
 
 .imgTix {
-  background-image: url("../img/shed5.jpg"); }
+  background-image: url("../img/shed5.jpg");
+  background-position: top center; }
 
 @media only screen and (max-width: 768px) {
   #info, #tickets {
