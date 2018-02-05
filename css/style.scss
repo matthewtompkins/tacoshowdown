@@ -195,11 +195,10 @@
   border: 2px solid $white;
   max-width: 500px;
   padding: 2em;
-  width: 40vw;
 
     @include responsive(small-screen) {
-
       min-width: 100%;
+      padding: 1em;
       text-align: center;
       width: 100%;
     };
@@ -231,6 +230,13 @@
   background-image: url("../img/shed5.jpg");
 }
 
+#info, #tickets {
+
+    @include responsive(small-screen) {
+      padding: 1em;
+    }
+}
+
 .flowButton {
   margin: 0;
 }
@@ -249,6 +255,10 @@
       height: 15vw;
       width: 15vw;
     }
+}
+
+#faygo {
+  background-image: url("../img/faygo.png");
 }
 
 #volunteer {

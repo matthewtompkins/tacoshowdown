@@ -586,11 +586,11 @@ h3 {
 .contTxt {
   border: 2px solid #F9FAF9;
   max-width: 500px;
-  padding: 2em;
-  width: 40vw; }
+  padding: 2em; }
   @media only screen and (max-width: 768px) {
     .contTxt {
       min-width: 100%;
+      padding: 1em;
       text-align: center;
       width: 100%; } }
 
@@ -619,6 +619,10 @@ h3 {
 .imgTix {
   background-image: url("../img/shed5.jpg"); }
 
+@media only screen and (max-width: 768px) {
+  #info, #tickets {
+    padding: 1em; } }
+
 .flowButton {
   margin: 0; }
 
@@ -634,6 +638,9 @@ h3 {
     .sponsor {
       height: 15vw;
       width: 15vw; } }
+
+#faygo {
+  background-image: url("../img/faygo.png"); }
 
 @media only screen and (max-width: 768px) {
   #volunteer {
