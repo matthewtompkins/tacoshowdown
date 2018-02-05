@@ -239,7 +239,7 @@ table {
   background: #F9FAF9;
   border: 2px solid #F9FAF9;
   color: #5B584F;
-  font-family: "Rammetto One", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   margin: 1em;
   padding: .25em .618em;
   text-transform: lowercase;
@@ -327,7 +327,7 @@ h3 {
   font-size: .5em; }
 
 .fontHead {
-  font-family: "Rammetto One", sans-serif; }
+  font-family: "Fjalla One", sans-serif; }
 
 .fontBody {
   font-family: "Abel", sans-serif; }
@@ -555,7 +555,7 @@ h3 {
       position: relative; } }
 
 .titleText {
-  font-family: "Rammetto One", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 4.236em;
   line-height: 1em; }
   @media only screen and (max-width: 768px) {
