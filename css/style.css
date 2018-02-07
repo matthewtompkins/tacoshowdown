@@ -435,7 +435,7 @@ h3 {
   transition: .9s; }
 
 /*------------------------
---------SITE CONTENT------
+--------NAV MENU----------
 ------------------------*/
 .topNav {
   background-color: transparent;
@@ -521,21 +521,22 @@ h3 {
   #hamburger:hover::after {
     left: 5px; }
 
-.linkRed:hover {
-  color: #92A78C !important; }
-
-.linkBlack:hover {
-  color: #5B584F; }
-
 .navOption {
   margin-right: 60px; }
 
 .tix {
   transform: translateY(-10px); }
 
+.socNav {
+  align-items: center;
+  justify-content: space-around; }
+
+/*------------------------
+--------HERO----------
+------------------------*/
 .hero {
   background-attachment: fixed;
-  background-image: url("../img/hero2wide.png");
+  background-image: url("../img/hero2comp.png");
   flex-direction: column;
   min-height: 100vh; }
   @media only screen and (max-width: 768px) {
@@ -545,44 +546,9 @@ h3 {
     .hero {
       background-attachment: scroll; } }
 
-.titleDiv {
-  width: 100%; }
-  @media only screen and (max-width: 768px) {
-    .titleDiv {
-      position: relative; } }
-  @media only screen and (max-height: 576px) and (orientation: landscape) {
-    .titleDiv {
-      position: relative; } }
-
-.titleText {
-  font-family: "Fjalla One", sans-serif;
-  font-size: 4.236em;
-  line-height: 1em; }
-  @media only screen and (max-width: 768px) {
-    .titleText {
-      line-height: 1; } }
-
-.bgTile {
-  float: left;
-  height: 100%;
-  width: 50%; }
-
-.infoDiv {
-  background-color: rgba(10, 10, 10, 0.4); }
-
-.sidebar {
-  background-color: rgba(10, 10, 10, 0.7); }
-  @media only screen and (max-width: 768px) {
-    .sidebar {
-      display: none; } }
-  @media only screen and (max-height: 576px) and (orientation: landscape) {
-    .sidebar {
-      display: none; } }
-
-.socNav {
-  align-items: center;
-  justify-content: space-around; }
-
+/*------------------------
+--------TEXT CONTENT-------
+------------------------*/
 .contTxt {
   border: 2px solid #F9FAF9;
   max-width: 500px;
@@ -627,6 +593,9 @@ h3 {
 .flowButton {
   margin: 0; }
 
+/*------------------------
+--------SPONSORS----------
+------------------------*/
 .sponsorDiv {
   flex-wrap: wrap; }
 
@@ -647,6 +616,9 @@ h3 {
   #volunteer {
     padding: 0; } }
 
+/*------------------------
+--------CONTACT----------
+------------------------*/
 .formDiv {
   background-color: #5B584F;
   min-width: 400px;

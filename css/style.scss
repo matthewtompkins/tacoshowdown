@@ -5,8 +5,10 @@
 @import 'framework.scss';
 
 /*------------------------
---------SITE CONTENT------
+--------NAV MENU----------
 ------------------------*/
+
+
 
 .topNav {
   background-color: transparent;
@@ -105,20 +107,6 @@
     }
 }
 
-.linkRed {
-
-  &:hover {
-    color: $green!important;
-  }
-}
-
-.linkBlack {
-
-  &:hover {
-    color: $black;
-  }
-}
-
 .navOption {
   margin-right: 60px;
 }
@@ -127,9 +115,19 @@
   transform: translateY(-10px);
 }
 
+.socNav {
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+/*------------------------
+--------HERO----------
+------------------------*/
+
 .hero {
   background-attachment: fixed;
-  background-image: url("../img/hero2wide.png");
+  background-image: url("../img/hero2comp.png");
   flex-direction: column;
   min-height: 100vh;
 
@@ -142,54 +140,10 @@
     }
 }
 
-.titleDiv {
-  width: 100%;
 
-    @include responsive(small-screen) {
-      position: relative;
-    }
-
-    @include landscape {
-      position: relative;
-    }
-}
-
-.titleText {
-  font-family: $header;
-  font-size: 4.236em;
-  line-height: 1em;
-
-    @include responsive(small-screen) {
-      line-height: 1;
-    }
-}
-
-.bgTile {
-  float: left;
-  height: 100%;
-  width: 50%;
-}
-
-.infoDiv {
-  background-color: rgba(10,10,10,.4);
-}
-
-.sidebar {
-  background-color: rgba(10,10,10,.7);
-
-    @include responsive(small-screen) {
-      display: none;
-    };
-
-    @include landscape {
-      display: none;
-    } ;
-}
-
-.socNav {
-  align-items: center;
-  justify-content: space-around;
-}
+/*------------------------
+--------TEXT CONTENT-------
+------------------------*/
 
 .contTxt {
   border: 2px solid $white;
@@ -201,7 +155,7 @@
       padding: 1em;
       text-align: center;
       width: 100%;
-    };
+    }
 }
 
 .headline {
@@ -242,6 +196,10 @@
   margin: 0;
 }
 
+/*------------------------
+--------SPONSORS----------
+------------------------*/
+
 .sponsorDiv {
   flex-wrap: wrap;
 }
@@ -268,6 +226,10 @@
       padding: 0;
     };
 }
+
+/*------------------------
+--------CONTACT----------
+------------------------*/
 
 .formDiv {
   background-color: $black;
