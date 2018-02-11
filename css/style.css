@@ -550,7 +550,7 @@ h3 {
 --------TEXT CONTENT-------
 ------------------------*/
 .contTxt {
-  border: 2px solid #F9FAF9;
+  border: 2px solid #F7CD82;
   max-width: 500px;
   padding: 2em; }
   @media only screen and (max-width: 768px) {
