@@ -220,6 +220,34 @@
   background-image: url("../img/faygo.png");
 }
 
+#first {
+  background-image: url("../img/first.png");
+}
+
+#aqua {
+  background-image: url("../img/aqua.png");
+}
+
+#lis {
+  background-image: url("../img/lis.jpg");
+}
+
+#dmfg {
+  background-image: url("../img/dmfg.png");
+}
+
+#alley {
+  background-image: url("../img/alley.png");
+}
+
+#mex {
+  background-image: url("../img/mex.png");
+}
+
+#wella {
+  background-image: url("../img/wella.png");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
