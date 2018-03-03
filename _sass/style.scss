@@ -248,6 +248,10 @@
   background-image: url("../img/wella.png");
 }
 
+#nee {
+  background-image: url("../img/nee.png");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
