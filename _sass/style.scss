@@ -252,6 +252,22 @@
   background-image: url("../img/nee.png");
 }
 
+#elJim {
+  background-image: url("../img/elJim.png");
+}
+
+#delBen {
+  background-image: url("../img/delBen.png");
+}
+
+#beyond {
+  background-image: url("../img/beyond.png");
+}
+
+#water {
+  background-image: url("../img/water.png");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
