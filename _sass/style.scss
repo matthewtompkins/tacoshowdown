@@ -313,6 +313,10 @@ label {
 .volArea {
   overflow: scroll;
   resize: none;
+
+    @include responsive(xl-screen) {
+      overflow: none;
+    }
 }
 
 input[type="submit"] {
