@@ -268,6 +268,14 @@
   background-image: url("../img/water.png");
 }
 
+#harolds {
+  background-image: url("../img/harolds.png");
+}
+
+#girls {
+  background-image: url("../img/girls.jpg");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
