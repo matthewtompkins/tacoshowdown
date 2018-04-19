@@ -202,6 +202,12 @@
 
 .sponsorDiv {
   flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+
+    @include responsive(small-screen) {
+      width: 100%;
+    }
 }
 
 .sponsor {
