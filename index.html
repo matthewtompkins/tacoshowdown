@@ -177,6 +177,13 @@
 
     var hamburger = document.getElementById("hamburger");
     var mMenu = document.getElementById("mMenu");
+    var mOption = document.getElementsByClassName("mOption");
+
+    for ( i = 0; i < mOption.length; i++ ) {
+
+      mOption[i].addEventListener("click", closeMenu);
+    }
+
     var menuClose = document.getElementById("menuClose");
 
     hamburger.addEventListener("click", function() {
