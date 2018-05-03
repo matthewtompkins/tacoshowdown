@@ -282,6 +282,10 @@
   background-image: url("../img/girls.jpg");
 }
 
+#mikes {
+  background-image: url("../img/mikes.jpg");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
