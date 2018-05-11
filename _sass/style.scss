@@ -306,6 +306,10 @@
   background-image: url("../img/mrtaco.jpg");
 }
 
+#mexico {
+  background-image: url("../img/mexico.jpg");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
