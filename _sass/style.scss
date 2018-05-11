@@ -286,6 +286,10 @@
   background-image: url("../img/mikes.jpg");
 }
 
+#barefoot {
+  background-image: url("../img/barefoot.png");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
