@@ -290,6 +290,14 @@
   background-image: url("../img/barefoot.png");
 }
 
+#fourleaf {
+  background-image: url("../img/fourleaf.png");
+}
+
+#torti {
+  background-image: url("../img/torti.png");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
