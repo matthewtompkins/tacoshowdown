@@ -310,6 +310,18 @@
   background-image: url("../img/mexico.jpg");
 }
 
+#naci {
+  background-image: url("../img/nacimiento.jpg");
+}
+
+#pearl {
+  background-image: url("../img/pearl.png");
+}
+
+#steam {
+  background-image: url("../img/steam.jpg");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
