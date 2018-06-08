@@ -326,6 +326,14 @@
   background-image: url("../img/steam.jpg");
 }
 
+#crow {
+  background-image: url("../img/crow.jpg");
+}
+
+#river {
+  background-image: url("../img/river.png");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
