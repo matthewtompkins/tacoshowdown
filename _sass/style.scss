@@ -334,6 +334,10 @@
   background-image: url("../img/river.png");
 }
 
+#loncheria {
+  background-image: url("../img/loncheria.jpg");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
