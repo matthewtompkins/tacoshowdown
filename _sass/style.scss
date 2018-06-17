@@ -338,6 +338,10 @@
   background-image: url("../img/loncheria.jpg");
 }
 
+#charro {
+  background-image: url("../img/charro.png");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
