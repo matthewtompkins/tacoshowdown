@@ -342,6 +342,30 @@
   background-image: url("../img/charro.png");
 }
 
+#griffin {
+  background-image: url("../img/ligero.jpg");
+}
+
+#miller {
+  background-image: url("../img/miller.jpg");
+}
+
+#modelo {
+  background-image: url("../img/modelo.jpg");
+}
+
+#xx {
+  background-image: url("../img/xx.png");
+}
+
+#corona {
+  background-image: url("../img/corona.jpg");
+}
+
+#bakersfield {
+  background-image: url("../img/bakersfield.jpg");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
