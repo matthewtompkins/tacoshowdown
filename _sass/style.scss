@@ -366,6 +366,10 @@
   background-image: url("../img/bakersfield.jpg");
 }
 
+#daniels {
+  background-image: url("../img/daniels.jpg");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
