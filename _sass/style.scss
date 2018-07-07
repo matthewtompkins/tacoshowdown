@@ -386,6 +386,10 @@
   background-image: url("../img/catrinas.png");
 }
 
+#camino {
+  background-image: url("../img/camino.png");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
