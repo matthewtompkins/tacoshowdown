@@ -370,6 +370,22 @@
   background-image: url("../img/daniels.jpg");
 }
 
+#eats {
+  background-image: url("../img/eats.jpg");
+}
+
+#estos {
+  background-image: url("../img/estos.jpg");
+}
+
+#squeals {
+  background-image: url("../img/squeals.jpg");
+}
+
+#catrinas {
+  background-image: url("../img/catrinas.png");
+}
+
 #volunteer {
 
     @include responsive(small-screen) {
