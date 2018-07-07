@@ -218,11 +218,21 @@
   height: 10vw;
   max-height: 200px;
   max-width: 200px;
+  opacity: 1;
+  transition: .3s;
   width: 10vw;
 
     @include responsive(small-screen) {
       height: 15vw;
       width: 15vw;
+
+        &:hover {
+          opacity: 1;
+        }
+    }
+
+    &:hover {
+      opacity: .5;
     }
 }
 
